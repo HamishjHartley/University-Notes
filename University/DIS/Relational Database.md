@@ -1,0 +1,26 @@
+[Data Models](Data%20Models.md)
+
+## 1. Definition
+A computer database is a defined as a "set of information stored in a computer." The database system allows the actions: Store, Organise, Update and Retrieval. Information in a Relational Database is stored as tuples/records in tables/relations. A table is used to relate data. 
+
+## 2. Relation Structure
+A relation between people and their National Insurance Number:
+
+| Name | NIN      |
+| ---- | -------- |
+| John | B8765466 |
+| Mary | A2374679 |
+| Tony | A1234567 |
+
+Values in each column are of the same type. In a relational model each column has a Domain of values where all possible values are taken from.  Degree of a relation is number of columns it has, cardinality of a relation is the number of unique rows that it has. Each relation has attributes which are also known as headings which are the relation schema. By defining attribute names the relation is more expressive. Each attribute has a domain which includes all possible values for the given attribute. For example, Name domain is varchar. 
+
+### 3. Keys
+A candidate key is a set of attributes which have unique tuples/rows. A Primary key is a type of candidate key which uniquely identifies tuples. Data is linked between two relations using Foreign keys. To implement a foreign key the primary key attributes are placed in the referencing relation. 
+
+### 4. Entity Relationship Modelling (E/R)
+E/R modelling consists of Entities, Attributes and Relationships. Entities are the concepts which data is to be stored, Attributes are the properties that describe these concepts and Relationships are the link between two entities. 
+
+### 5. SQL
+Structured Query Language, used to implement relational database.
+See [SQL](SQL.md) for syntax.
+

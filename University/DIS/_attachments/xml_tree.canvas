@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"effe1f72dc11c589","type":"text","text":"book","x":-23,"y":70,"width":125,"height":60},
+		{"id":"26053440423c9871","type":"text","text":"Library","x":-140,"y":-20,"width":125,"height":60},
+		{"id":"a00b28d8d852c92f","type":"text","text":"chapter","x":102,"y":240,"width":125,"height":60},
+		{"id":"64903c15786fba1f","type":"text","text":"chapter","x":102,"y":160,"width":125,"height":60},
+		{"id":"1582bc3033ac2a5f","type":"text","text":"section","x":227,"y":340,"width":125,"height":60},
+		{"id":"4d221d053ce69957","x":352,"y":540,"width":159,"height":54,"type":"text","text":"paragraph: B"},
+		{"id":"1898f7c7a9ad63f8","type":"text","text":"paragraph: A","x":352,"y":440,"width":173,"height":60}
+	],
+	"edges":[
+		{"id":"4828e2cc65dadc99","fromNode":"effe1f72dc11c589","fromSide":"bottom","toNode":"64903c15786fba1f","toSide":"left"},
+		{"id":"010c6d079c956d43","fromNode":"effe1f72dc11c589","fromSide":"bottom","toNode":"a00b28d8d852c92f","toSide":"left"},
+		{"id":"298cec6d5dc4c279","fromNode":"26053440423c9871","fromSide":"bottom","toNode":"effe1f72dc11c589","toSide":"left"},
+		{"id":"1a1941a5f3f29df5","fromNode":"a00b28d8d852c92f","fromSide":"bottom","toNode":"1582bc3033ac2a5f","toSide":"left"},
+		{"id":"7de318dbc9592142","fromNode":"1582bc3033ac2a5f","fromSide":"bottom","toNode":"1898f7c7a9ad63f8","toSide":"left"},
+		{"id":"250d47f5dba5f4b1","fromNode":"1582bc3033ac2a5f","fromSide":"bottom","toNode":"4d221d053ce69957","toSide":"left"}
+	]
+}

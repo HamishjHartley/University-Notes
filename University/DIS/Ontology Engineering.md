@@ -1,0 +1,47 @@
+[DIS-549](DIS-549.md)
+### Ontology Definition
+An Ontology describes a formal specification of a certain domain, allowing a shared understanding of a domain of interest and Formal and machine manipulable model of a domain of interest. 
+### Why they are used
+- To share a common understanding of the structure of information among people or software agents
+- Enable reuse of domain knowledge
+- Make domain assumptions explicit
+- Separate domain knowledge from the operation knowledge
+- Analyse domain knowledge
+### Ontology Structure
+An ontology has four elements: **Classes, modifier, definables and relations.** 
+##### Class
+Self-standing entity that is a template for creating objects
+##### Modifier
+Properties, attributes or aspects that an object can have, such as name and DOB of class person
+##### Definable
+Class that is derived from other classes.
+##### Relation
+Links the two sides of the relation to each other, with the two sides being either classes or classes and modifier
+
+![](_attachments/Pasted%20image%2020240402163245.png)
+
+### Ontology Design Example
+*"We wish to create a database for a company that runs training
+courses. For this, we must store data about each person such as the
+trainees, the instructors and the courses that are presented. For each
+person, we want to store national insurance number and a name.
+Trainees have registration numbers and instructors have staff
+numbers. A trainee takes many courses. Each course is presented
+by one instructor and has a number of trainees. An instructor
+presents many courses."*
+- The following nouns can be distinguished: (Company, Course, Person, trainee, Instructor, National insurance number(NiN), name, registration number(RN) and Staff number(SN))
+- The following verbs can be distinguished: (runs_course, takes_course and presents_course)
+##### ERD
+![](_attachments/Pasted%20image%2020240404172156.png)
+##### Ontology
+###### Table representation
+
+| Classes/ instances                                                                               | Modifiers                                 | Relation                                                                                                     | Definable |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------ | --------- |
+| Company<br>Course<br>Person<br> <br> <br>     Trainee(subclass)<br>     Instructor(subclass)<br> | <br><br>NiN<br>Name<br><br> RegN<br>StafN | runsCourse<br> takesCourse<br> presentsCourse <br> <br> has_NiN <br> hasName <br> hasRegN <br> hasStaffN<br> |           |
+###### Diagrammatic representation
+![](_attachments/Pasted%20image%2020240404173156.png)
+
+### DIKW Pyramid
+4 layer pyramid; with Data a the bottom, which when it is related to each other forms Information, when the Information is analysed is becomes Knowledge. When principles about the patterns gained from Knowledge is understood, Wisdom is created. 
+Wisdom can be utilised to answer questions/make predictions
