@@ -45,3 +45,17 @@ presents many courses."*
 ### DIKW Pyramid
 4 layer pyramid; with Data a the bottom, which when it is related to each other forms Information, when the Information is analysed is becomes Knowledge. When principles about the patterns gained from Knowledge is understood, Wisdom is created. 
 Wisdom can be utilised to answer questions/make predictions
+
+### Top-down and Bottom-up approaches
+In a top-down approach the super class(es)/concepts that are related to the domain are identified, then whilst going down the sub and sub-sub classes are identified down to the instances. In the Bottom-up approach, instances are started to conceptualise by performing an abstraction the identify the bottom class hierarchy. Then further up more abstraction is performed to identify middle classes, then reaching the super class(es)/concepts.
+
+### Relations (roles, properties) characteristic types
+##### Symmetry
+A relation that has itself as an inverse
+##### Transitivity
+Single "hop" is implied over a chain of two along a given relation
+##### Functionality
+Any instance is related to at most one other instance
+##### Reflexivity
+Every instance is related to itself
+

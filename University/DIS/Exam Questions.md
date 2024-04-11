@@ -344,11 +344,59 @@ in SupStore and studies at the university of Strathclyde"*
 
 ![](_attachments/Pasted%20image%2020240404182440.png)
 ### Week 6 - Ontologies (Cont')
-1. Develop an ontology, draw a table that lists object and data properties. For each property show both Domain and range, then identify relation characteristics(functional, inverse functional, symmetric, transitive, reflexive)
+##### 1. Develop an ontology, draw a table that lists object and data properties. For each property show both Domain and range, then identify relation characteristics(functional, inverse functional, symmetric, transitive, reflexive)
+
+*"Holiday packages. The themes of holiday packages such as culture, sightseeing, safari. Inclusive holiday packages. Accommodation-only holiday packages. Hotels. The Marriott Hotel Glasgow. Hotel amenities such as bar, lounge, room service, pool, spa. Hotel star rating. A four-star hotel. Holiday package booking. Person, Customer, Salesperson."*
+
+The produced ontology should allow the following information to be recovered:
+- The names of the customers who book sightseeing holiday packages
+- The names of salespersons who took bookings for safari holiday packages.
+- The holiday packages that use the Marriott Hotel Glasgow
+
+##### Step-by-step:
+1. List the standalone classes, modifiers, relations and definables.
+2. Distinguish between classes and instances.
+3. Indicate the hierarches for classes.
+4. For relations, give the range and domain and indicate whether they are symmetric, transitive, inverse functional, functional or reflexive. 
+5. Give a definition of each definable, state any assumptions that you make.
+
+| Domain          | Relation        | Range           | Symmetric | Transistive | Functional | Inverse Func | Reflexive |
+| --------------- | --------------- | --------------- | --------- | ----------- | ---------- | ------------ | --------- |
+| Booking         | For             | Holiday Package |           |             | X          |              |           |
+| Holiday package | Booken on       | Booking         |           |             |            | X            |           |
+| Booking         | Has Cust        | Customer        |           |             | X          |              |           |
+| Customer        | Made Booking    | Booking         |           |             |            | X            |           |
+| Booking         | Has Salesperson | SalesPerson     |           |             | X          |              |           |
+| SalesPerson     | Took Booking    | Booking         |           |             |            | X            |           |
+| Holiday Package | Uses            | Hotel           |           |             |            |              |           |
+| Hotel           | Used on         | Holiday Package |           |             |            |              |           |
+| Hotel           | Has Amenity     | Amentiy         |           |             | X          |              |           |
+| Amenity         | Is Amenity of   | Hotel           |           |             |            | X            |           |
+| Holiday Package | Has Theme       | Theme           |           |             |            |              |           |
+| Person          | Has Name        | Name            |           |             |            |              |           |
+| Hotel           | Has Rating      | Star Rating     |           |             |            |              |           |
+
 ### Week 7 - OWL
-1. Define a class using OWL
+##### 1. Define a class using OWL
+###### Triangle
+*This class is described through a restriction on a property where all the instances of this class satisfy this restriction.*
+```<owl>
+<owl:Class rdf:about="#Triangle">
+		<rdfs:subClassOf rdf:resource="#Shape"/>
+	<owl:equivalentClass>
+		<owl:Restriction>
+		<owl:onProperty rdf:resource="#hasAngles"/>
+		<owl:qualifiedCardinality rdf:datatype="XMLSchema#nonNegativeInteger">
+		3
+		</owl:qualifiedCardinality>
+	<owl:onClass rdf:resource="#Angle"/>
+	</owl:Restriction>
+	</owl:equivalentClass>
+</owl:Class>
+```
+
 2. Define an object property or a data property using OWL
-3. Explain/ describe a snippet of OWL code(For example as shown below):
+4. Explain/ describe a snippet of OWL code(For example as shown below):
 	 Draw the graph corresponding to this set
 	 Explain the narrative meaning of this graph
 ### Week 8 - SPARQL
