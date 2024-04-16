@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/DIS/OWL.md",
+                "file": "University/DIS/W1. Relational Database.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 315.5
   },
   "right": {
     "id": "c5be986e83bccefd",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/DIS/OWL.md",
+                "file": "University/DIS/W1. Relational Database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/DIS/OWL.md",
+                "file": "University/DIS/W1. Relational Database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/DIS/OWL.md"
+                "file": "University/DIS/W1. Relational Database.md"
               }
             }
           }
@@ -148,26 +148,35 @@
   },
   "active": "94363dc181ebf1bd",
   "lastOpenFiles": [
-    "University/DIS/Exam Paper.md",
-    "Pasted image 20240415155726.png",
-    "Pasted image 20240415155143.png",
+    "University/DIS/W1. SQL.md",
+    "University/DIS/W2. XML.md",
+    "University/DIS/W7. OWL.md",
+    "University/DIS/W1. Relational Database.md",
+    "University/DIS/W9. Description Logic.md",
+    "University/DIS/Data Models.md",
+    "University/DIS/W8. SPARQL.md",
+    "University/DIS/W5,6. Ontology Engineering.md",
+    "University/DIS/W4. RDF.md",
+    "University/DIS/DIS-549 Module Overview.md",
+    "University/DIS/rdf_schema_example1.md",
+    "University/DIS/rdfs_schema_example2.md",
+    "README.md",
+    "University/DIS/Exam Questions+Prep",
+    "University/Welcome.md",
+    "University/DIS/_attachments/Pasted image 20240416101334.png",
+    "University/DIS/_attachments/Pasted image 20240416101037.png",
+    "University/DIS/Exam Questions+Prep/Exam Paper.md",
+    "University/DIS/_attachments/Pasted image 20240415155726.png",
+    "University/DIS/_attachments/Pasted image 20240415155143.png",
     "University/DIS/_attachments/Ontology_club.png",
-    "University/DIS/SQL.md",
     "Untitled.canvas",
-    "University/DIS/Exam Questions.md",
+    "University/DIS/Exam Questions+Prep/Exam Questions.md",
     "University/DIS/_attachments/Pasted image 20240404182440.png",
     "University/DIS/_attachments/Pasted image 20240404172156.png",
     "University/DIS/_attachments/Pasted image 20240404103317.png",
     "University/DIS/_attachments/Pasted image 20240403172454.png",
     "University/DIS/_attachments/Pasted image 20240403114415.png",
-    "University/DIS/_attachments/Pasted image 20240329152527.png",
-    "University/DIS/_attachments/Pasted image 20240412100652.png",
-    "University/DIS/Relational Database.md",
-    "University/DIS/Ontology Engineering.md",
-    "University/DIS/RDF.md",
     "University/MSA/TODO.md",
-    "University/DIS/OWL.md",
-    "University/MSA/Timeline.md",
-    "README.md"
+    "University/MSA/Timeline.md"
   ]
 }
