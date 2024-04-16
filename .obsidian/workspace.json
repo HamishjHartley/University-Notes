@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0436019ebd3e9b8b",
+        "id": "48ae4811c2864139",
         "type": "tabs",
         "children": [
           {
-            "id": "94363dc181ebf1bd",
+            "id": "1dad72cce84868e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/DIS/W1. Relational Database.md",
+                "file": "University/DIS/W8. SPARQL and Turtle.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c5be986e83bccefd",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/DIS/W1. Relational Database.md",
+                "file": "University/DIS/W8. SPARQL and Turtle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/DIS/W1. Relational Database.md",
+                "file": "University/DIS/W8. SPARQL and Turtle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/DIS/W1. Relational Database.md"
+                "file": "University/DIS/W8. SPARQL and Turtle.md"
               }
             }
           }
@@ -146,18 +147,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "94363dc181ebf1bd",
+  "active": "1dad72cce84868e2",
   "lastOpenFiles": [
-    "University/DIS/W1. SQL.md",
-    "University/DIS/W2. XML.md",
-    "University/DIS/W7. OWL.md",
+    "Pasted image 20240416114303.png",
+    "University/DIS/_attachments/Pasted image 20240416104246.png",
+    "Untitled.canvas",
+    "University/DIS/W8. SPARQL and Turtle.md",
+    "University/DIS/DIS-549 Module Overview.md",
+    "University/DIS/Exam Questions+Prep/Exam Paper.md",
+    "University/DIS/Exam Questions+Prep/Exam Questions.md",
     "University/DIS/W1. Relational Database.md",
     "University/DIS/W9. Description Logic.md",
-    "University/DIS/Data Models.md",
-    "University/DIS/W8. SPARQL.md",
+    "University/DIS/W7. OWL.md",
     "University/DIS/W5,6. Ontology Engineering.md",
     "University/DIS/W4. RDF.md",
-    "University/DIS/DIS-549 Module Overview.md",
+    "University/DIS/W2. XML.md",
+    "University/DIS/W1. SQL.md",
+    "rdfs_schema_example2.md",
+    "University/MSA/TODO.md",
+    "University/DIS/Data Models.md",
     "University/DIS/rdf_schema_example1.md",
     "University/DIS/rdfs_schema_example2.md",
     "README.md",
@@ -165,18 +173,13 @@
     "University/Welcome.md",
     "University/DIS/_attachments/Pasted image 20240416101334.png",
     "University/DIS/_attachments/Pasted image 20240416101037.png",
-    "University/DIS/Exam Questions+Prep/Exam Paper.md",
     "University/DIS/_attachments/Pasted image 20240415155726.png",
     "University/DIS/_attachments/Pasted image 20240415155143.png",
     "University/DIS/_attachments/Ontology_club.png",
-    "Untitled.canvas",
-    "University/DIS/Exam Questions+Prep/Exam Questions.md",
     "University/DIS/_attachments/Pasted image 20240404182440.png",
     "University/DIS/_attachments/Pasted image 20240404172156.png",
     "University/DIS/_attachments/Pasted image 20240404103317.png",
     "University/DIS/_attachments/Pasted image 20240403172454.png",
-    "University/DIS/_attachments/Pasted image 20240403114415.png",
-    "University/MSA/TODO.md",
     "University/MSA/Timeline.md"
   ]
 }

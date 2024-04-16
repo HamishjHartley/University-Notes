@@ -259,9 +259,9 @@ xmlns:dscr="https://www.rfc-editor.org/rfc/rfc3187/">
 
 ##### 4. Construct RDF schema of a given RDF graph
 
-| RDF                     | RDFS                    |
-| ----------------------- | ----------------------- |
-| [rdf_schema_example1](rdf_schema_example1.md) | [rdfs_schema_example2](rdfs_schema_example2.md) |
+| RDF | RDFS |
+| --- | ---- |
+|     |      |
 
 
 ##### 5. Integrate relational tables using RDF graph
@@ -562,3 +562,4 @@ ASK{?s ds:job "Professor".}
 ###### 2. Deduce extra knowledge that is not stated in the statements
 
 
+[[DIS-549 Module Overview]]
