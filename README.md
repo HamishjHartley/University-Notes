@@ -1,6 +1,6 @@
 ## MSc Advanced Computer Science Course Notes
 
 ### CS-549 DIS
-Contains concepts W1-w6
+Contains notes for W1-W7
 
-Contains exam questions W1-W6
+Contains example exam questions/answers for W1-W9 (whole course)
