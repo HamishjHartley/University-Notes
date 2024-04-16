@@ -395,15 +395,170 @@ The produced ontology should allow the following information to be recovered:
 </owl:Class>
 ```
 
-2. Define an object property or a data property using OWL
-4. Explain/ describe a snippet of OWL code(For example as shown below):
+###### 2. Define an object property or a data property using OWL
+*"Define studies"*
+![[Pasted image 20240412100755.png]]
+
+```<owl>
+<owl:ObjectProperty rdf:ID="studies">
+	<rdfs:domain rdf:resource="#Student"/>
+	<rdfs:range rdf:resource="#Module"/>
+</owl:ObjectProperty>
+```
+###### 3. Explain/ describe a snippet of OWL code(For example as shown below):
 	 Draw the graph corresponding to this set
 	 Explain the narrative meaning of this graph
-### Week 8 - SPARQL
-1. Write one or two SPARQL queries against a given Turtle document
-### Week 9 - Description on Logic/Reasoning
-1. Express knowledge statements as DL axioms
-2. Deduce extra knowledge that is not stated in the statements
+```<owl>
+<owl:Class rdf:about="#Man">
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<owl:disjointWith rdf:resource="#Woman"/>
+</owl:Class>
 
+<owl:Class rdf:about="#Woman">
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<owl:disjointWith rdf:resource="#Man"/>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#hasMember">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+	<rdfs:domain rdf:resoruce="#SmallTeam"/>
+	<rdfs:range>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="hasMember"/>
+			<owl:maxCardinality rdf:datatype="XMLSchema#nonNegativeInteger">5</owl:maxCardinality>
+			<owl:onClass rdf:resource="#Person"/>
+		</owl:Restriction>
+	</rdfs:range>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#ModernTeam">
+	<rdfs:subClassOf rdf:resource="#SmallTeam"/>
+	<rdfs:subClassOf>
+	<owl:Restriction>
+		<rdfs:subClassOf rdf:resource="#hasMember"/>
+		<owl:maxCardinality rdf:datatype="XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
+		<owl:onClass rdf:resource="#Woman"/>
+	</owl:Restriction>
+	</rdfs:subClassOf>
+</owl:Class>
+	
+```
+###### Solution
+- This is an Ontology that describes
+5 classes which are
+- Person and two sub- classes of
+Person: (Man and Woman)
+- SmallTeam and a sub class of it:
+ModernTeam
+- hasMember is an object property
+- SmallTeam can have a Max of five
+members since the relation is
+restricted with maxCardinality
+constraint
+- ModernTeam can have a Max of
+four women since the relation is
+restricted with maxCardinality
+constraint
+### Week 8 - SPARQL
+###### 1. Write one or two SPARQL queries against a given Turtle document
+```<turtle>
+@prefix ex: <http://example.org/> .
+@prefix ds: <http://knowledge/> .
+ex:john
+ds:FN "John Smith" ;
+ds:Job "Professor" ;
+ds:gender "Male" ;
+ds:hasAge "32" ;
+ds:workAt ex:Strath .
+ex:strath
+ds:title "Strathclyde";
+ds:hasDept ex:cis;
+ds:located ex:glasgow .
+ex:cis
+ds:title "CIS" ;
+ds:belongTo ex:strath ;
+ds:hasCourse ex:acs.
+```
+![[Pasted image 20240412102857.png]]
+
+###### Query 1
+*Write a query to list all the triples butlimit the returned solutions to three triples.*
+
+```<SPARQL>
+SELECT *
+WHERE {?s ?p ?o.}
+LIMIT 3
+```
+
+|         | Result    |              |
+| ------- | --------- | ------------ |
+| ?s      | ?o        | ?p           |
+| ex:john | ds:FN     | "John Smith" |
+| ex:john | ds:job    | "Professor"  |
+| ex:john | ds:gender | "Male"       |
+###### Query 2
+*Write a query to return full names of anyone whose job is Professor.*
+
+```<SPARQL>
+SELECT ?fullname
+WHERE {s? ds:FN ?fullname;
+		  ds:job ?job .
+	FILTER (?job="Professor").
+}
+```
+
+| Result     |
+| ---------- |
+| ?fullname  |
+| John Smith |
+
+###### Query 3
+*Write a query to return full name of anyone whose job is Professor OR has age greater than or equal to 32.*
+```<SPARQL>
+SELECT ?fullname
+WHERE {s? ds:FN ?fullname;
+		  ds:hasAge ?age;
+		  ds:job ?job.
+FILTER (?job="Professor" || ?age>=32).
+}
+```
+
+| Result     |
+| ---------- |
+| ?fullname  |
+| John Smith |
+
+###### Query 4
+*Write a query to return the full name of anyone who works at a work place that has a department that has a title "CIS*. Order the results in descending order.
+```<SPARQL>
+SELECT ?fullname
+WHERE {?s ds:FN ?fullname;
+		  ds:workAt ?wrk.
+	   ?wrk ds:hasDept ?dpt.
+	   ?dpt ds:title "CIS".}
+ORDER BY DESC(?fullname)
+```
+
+| Result     |
+| ---------- |
+| ?fullname  |
+| John Smith |
+
+###### Query 5
+*Are there any Professor in this dataset?*
+```<SPARQL>
+ASK{?s ds:job "Professor".}
+```
+
+| Result |
+| ------ |
+| "TRUE" |
+|        |
+
+### Week 9 - Description on Logic/Reasoning
+###### 1. Express knowledge statements as DL axioms
+*"All Mothers are Parent"*
+
+###### 2. Deduce extra knowledge that is not stated in the statements
 
 

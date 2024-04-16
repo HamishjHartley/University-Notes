@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "66ecb91699741fa8",
+        "id": "0436019ebd3e9b8b",
         "type": "tabs",
         "children": [
           {
-            "id": "d4f0e3aceeb3c3e5",
+            "id": "94363dc181ebf1bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/DIS/Exam Questions.md",
+                "file": "University/DIS/OWL.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/DIS/Exam Questions.md",
+                "file": "University/DIS/OWL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/DIS/Exam Questions.md",
+                "file": "University/DIS/OWL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/DIS/Exam Questions.md"
+                "file": "University/DIS/OWL.md"
               }
             }
           }
@@ -146,11 +146,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4f0e3aceeb3c3e5",
+  "active": "94363dc181ebf1bd",
   "lastOpenFiles": [
-    "README.md",
-    "University/DIS/OWL.md",
+    "University/DIS/Exam Paper.md",
+    "Pasted image 20240415155726.png",
+    "Pasted image 20240415155143.png",
+    "University/DIS/_attachments/Ontology_club.png",
+    "University/DIS/SQL.md",
+    "Untitled.canvas",
+    "University/DIS/Exam Questions.md",
+    "University/DIS/_attachments/Pasted image 20240404182440.png",
+    "University/DIS/_attachments/Pasted image 20240404172156.png",
+    "University/DIS/_attachments/Pasted image 20240404103317.png",
+    "University/DIS/_attachments/Pasted image 20240403172454.png",
+    "University/DIS/_attachments/Pasted image 20240403114415.png",
+    "University/DIS/_attachments/Pasted image 20240329152527.png",
+    "University/DIS/_attachments/Pasted image 20240412100652.png",
+    "University/DIS/Relational Database.md",
     "University/DIS/Ontology Engineering.md",
-    "University/DIS/Exam Questions.md"
+    "University/DIS/RDF.md",
+    "University/MSA/TODO.md",
+    "University/DIS/OWL.md",
+    "University/MSA/Timeline.md",
+    "README.md"
   ]
 }
