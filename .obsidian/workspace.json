@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "48ae4811c2864139",
+        "id": "1d1da593fdc2a622",
         "type": "tabs",
         "children": [
           {
-            "id": "1dad72cce84868e2",
+            "id": "220cd16999be9404",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University/DIS/Exam Questions+Prep/23 Exam paper.md",
+                "file": "University/MSA/MSA coursework.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University/DIS/Exam Questions+Prep/23 Exam paper.md",
+                "file": "University/MSA/MSA coursework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University/DIS/Exam Questions+Prep/23 Exam paper.md",
+                "file": "University/MSA/MSA coursework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University/DIS/Exam Questions+Prep/23 Exam paper.md"
+                "file": "University/MSA/MSA coursework.md"
               }
             }
           }
@@ -146,63 +146,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "09d51f689283d905",
-    "type": "floating",
-    "children": [
-      {
-        "id": "121e5978721ba482",
-        "type": "window",
-        "children": [
-          {
-            "id": "9bf0111376abfd81",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "73b74c7f7b4ad1a7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "University/DIS/W7. OWL.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 832,
-        "y": 0,
-        "width": 832,
-        "height": 1062,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "1dad72cce84868e2",
+  "active": "220cd16999be9404",
   "lastOpenFiles": [
-    "University/DIS/W7. OWL.md",
+    "University/DIS/W1. SQL.md",
+    "University/DIS/W2. XML.md",
+    "University/DIS/W5,6. Ontology Engineering.md",
+    "University/DIS/W4. RDF.md",
+    "University/DIS/W1. Relational Database.md",
+    "University/DIS/Exam Questions+Prep/Exam Questions.md",
+    "University/DIS/Exam Questions+Prep/Exam Paper.md",
     "University/DIS/Exam Questions+Prep/23 Exam paper.md",
+    "University/DIS/W7. OWL.md",
     "University/DIS/W8. SPARQL and Turtle.md",
     "University/DIS/DIS-549 Module Overview.md",
-    "University/DIS/Exam Questions+Prep/Exam Paper.md",
-    "University/DIS/Exam Questions+Prep/Exam Questions.md",
-    "University/DIS/W2. XML.md",
-    "University/DIS/W1. SQL.md",
     "University/DIS/W9. Description Logic.md",
-    "University/DIS/W5,6. Ontology Engineering.md",
     "Pasted image 20240416153912.png",
     "Pasted image 20240416114303.png",
     "University/DIS/_attachments/Pasted image 20240416104246.png",
     "Untitled.canvas",
-    "University/DIS/W1. Relational Database.md",
-    "University/DIS/W4. RDF.md",
     "rdfs_schema_example2.md",
-    "University/MSA/TODO.md",
+    "University/MSA/MSA coursework.md",
     "University/DIS/Data Models.md",
     "University/DIS/rdf_schema_example1.md",
     "University/DIS/rdfs_schema_example2.md",

@@ -1,5 +1,16 @@
-Implement 5 triggers
+Action List
+- Create data Layer backend for 5/day and hydration triggers (1 hour)
+- Create settings page where user can configure trigger settings (2 hours)
+- Get Meal times working (2 hours)
+- Get Encouragement working (1 hour)
+- Get step count working (3 hours)
+**Total**: 9 Hours (very doable)
+---
+### Notes
+It's a doable amount of work if we keep it very un-ambitious, lets just implement a straightforward app which follows best practices and is solid. Don't get vindictive just now it won't help, try to rally the group to achieve the best possible result so we can all get the best marks we can. 
 
+---
+### List of Triggers
 ##### 1. User activity
 Track users step count
 ##### 2. Mealtimes
